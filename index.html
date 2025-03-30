@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobilei Amdany  </title>
+   
+    <title>Mobilei Amdany navigation menu  </title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
+    
     </style>
+    <link rel="stylesheet" href="styles/style.css">
+   
 </head>
 <body>
     <h1>Welcome to Mobilei Amdany web Page</h1>
-    <p>This is a simple HTML file.</p>
-    <ol type="I">
-        <li>About</li>
-        <li>Education</li>
-        <li>Business</li>
-        <li>Country</li>
-    </ol>
-    <img src="https://images.pexels.com/photos/173080/pexels-photo-173080.jpeg" alt="Beautiful Image from Pexels" width="600">
+    <p>This is a simple Page</p>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="content">
+        <h2>Page Content</h2>
+        <p>This is an example of a navigation bar fixed at the top.</p>
+    </div>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/100/FF5733" alt="Image 1">
+        <img src="https://via.placeholder.com/100/33FF57" alt="Image 2">
+        <img src="https://via.placeholder.com/100/5733FF" alt="Image 3">
+        <img src="https://via.placeholder.com/100/FF33A1" alt="Image 4">
+        <img src="https://via.placeholder.com/100/FFFF33" alt="Image 5">
+        <img src="https://via.placeholder.com/100/33FFFF" alt="Image 6">
+    </div>
+
+    <img src="unnamed.jpg" alt="Beautiful Image from Pexels" width="600">
     <table border="1" cellpadding="5" cellspacing="0">
         <th>Name</th>
         <th>Address</th>
@@ -135,6 +147,13 @@
         <input type="email" id="email" name="email" required><br><br>
         
         <input type="submit" value="Register">
+    </form>
+    <form class="contact-form" action="submit_form.php" method="POST">
+        <h2>Contact Us</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
